@@ -47,7 +47,6 @@ export async function getStaticProps(context) {
   const selectedMeetup = await meetupsCollection.findOne({
     _id: ObjectId(meetupId),
   }); // dans find: filtre + quels champs doivent etre rendus
-  // on est obligé de wrap meetup Id avec ça pcke dans mogo l'ID c'est pas un string c une merde et il faut convertir le string en merde
   client.close();
 
   return {
