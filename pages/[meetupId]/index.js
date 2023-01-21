@@ -38,7 +38,7 @@ export async function getStaticProps(context) {
   const meetupId = context.params.meetupId; // on prend l'ID de l'URL tout simplement et le bouton show details ne fait que nous mettre l'ID dans l'URL
 
   const client = await MongoClient.connect(
-    "mongodb+srv://jeanro2b:cmdrate2012@cluster0.xcf5fdg.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://jeanro2b:password@cluster0.xcf5fdg.mongodb.net/?retryWrites=true&w=majority"
   );
   const db = client.db();
 
